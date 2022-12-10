@@ -150,4 +150,43 @@ span {
 
 .content-wrapper {
     margin: 16px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 16px;
+}
+
+.projects-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    border-left: #f0b71a solid 8px;
+    box-shadow: rgb(187, 187, 187) 2px 2px 4px;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.project-card-action {
+    justify-self: flex-end;
+    display: flex;
+    gap: 16px;
+}
+
+.card-wrapper {
+    margin: 32px 16px 32px 16px;
+}
+
+.card-wrapper p {
+    margin: 0 0 32px 0;
+}
+
+h4 {
+    margin: 0px;
 }
