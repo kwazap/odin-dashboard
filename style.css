@@ -1,0 +1,67 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+.wrapper {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    background-color: #1DA1F2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.content {
+    background-color: aliceblue;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.sidebar-wrapper {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(25px, 1fr));
+    row-gap: 48px;
+}
+
+.sidebar-wrapper img {
+    filter: invert();
+}
+
+.sidebar-wrapper > div{
+    justify-self: center;
+}
+
+.dashboard-title, .sidebar-content, .sidebar-technical {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: fit-content(24px) 100px;
+    margin-left: 120px;
+    align-items: center;
+    column-gap: 16px;
+    row-gap: 16px;
+    grid-template-rows: repeat(auto-fit, minmax(25px, 35px));
+    font-weight: bold;
+    font-family: 'roboto';
+    font-size: 1.2rem;
+
+}
+
+.dashboard-title {
+    font-size: 1.6rem;
+    margin-top: 16px;
+}
